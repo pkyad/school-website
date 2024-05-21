@@ -1,9 +1,28 @@
 ---
-import { SITE } from 'astrowind:config';
+// import Image from '~/components/common/Image.astro';
+// import { SITE } from 'astrowind:config';
+export interface Props {
+  isDark?: boolean;
+}
+// const { isDark = false } = Astro.props;
 ---
 
 <span
-  class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white"
+  class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white flex"
 >
-  🚀 {SITE?.name}
+  <!-- {isDark ? 'Yes' : 'No'} -->
+  <!-- <span class="dark:text-white">CSS based</span> -->
+  <div
+    class="dark:bg-[url('~/assets/images/krishna-academy-icon-dark.png')] bg-[url('~/assets/images/krishna-academy-icon-light.png')] w-60 bg-contain bg-no-repeat h-10"
+  >
+  </div>
+  <!-- <Image
+    class="mx-auto rounded-md w-full"
+    widths={[400, 768, 1024, 2040]}
+    sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+    loading="eager"
+    width={300}
+    alt="krishna academy logo"
+    src="~/assets/images/logo-full.png"
+  /> -->
 </span>

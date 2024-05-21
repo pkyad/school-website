@@ -90,3 +90,16 @@
 .dd *:first-child {
   margin-top: 0;
 }
+
+h1,
+h2 {
+  word-spacing: 10px;
+}
+
+h3 {
+  word-spacing: 7px;
+}
+
+p {
+  word-spacing: 5px;
+}

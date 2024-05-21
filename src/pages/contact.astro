@@ -1,6 +1,5 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import HeroText from '~/components/widgets/HeroText.astro';
 import ContactUs from '~/components/widgets/Contact.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
@@ -12,66 +11,50 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline="Contact" title="Let's Connect!" />
-
   <ContactUs
     id="form"
-    title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
+    title="हमसे संपर्क करें"
+    subtitle="त्वरित उत्तरों के लिए, हमारे अक्सर पूछे जाने वाले प्रश्न अनुभाग देखें। आप जिस समाधान की तलाश कर रहे हैं वह आपको वहीं मिल सकता है! यदि नहीं, तो हमारी सहायता टीम आपकी सहायता करने में प्रसन्न है।"
     inputs={[
       {
         type: 'text',
         name: 'name',
-        label: 'Name',
+        label: 'नाम',
       },
       {
         type: 'email',
         name: 'email',
-        label: 'Email',
+        label: 'ईमेल',
       },
     ]}
     textarea={{
-      label: 'Message',
+      label: 'संदेश',
     }}
     disclaimer={{
       label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+        'इस संपर्क फ़ॉर्म को सबमिट करके, आप अपनी व्यक्तिगत जानकारी के संग्रह को स्वीकार करते हैं और सहमत होते हैं।',
     }}
-    description="Our support team typically responds within 24 business hours."
+    description="हमारी सहायता टीम आमतौर पर 24 व्यावसायिक घंटों के भीतर जवाब देती है।"
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="We are here to help!"
+    title="हम सहायता के लिए यहां उपलब्ध हैं!"
     items={[
       {
-        title: 'General support',
-        description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
-      },
-      {
-        title: 'Contact sales',
-        description:
-          'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
-      },
-      {
-        title: 'Technical support',
-        description:
-          'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
-      },
-      {
-        title: 'Phone',
-        description: '+1 (234) 567-890',
+        title: 'दूरभाष',
+        description: '+91-7857904210',
         icon: 'tabler:headset',
       },
       {
-        title: 'Email',
-        description: 'contact@support.com',
+        title: 'ईमेल',
+        description: 'hello@krishnaacademy.org',
         icon: 'tabler:mail',
       },
       {
-        title: 'Location',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
+        title: 'पता',
+        description: 'गौतम चौक, सोनपुर, सारण, बिहार 841101, भारत',
         icon: 'tabler:map-pin',
       },
     ]}
