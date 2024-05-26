@@ -69,6 +69,6 @@ export const footerData = {
   ],
   socialLinks: [],
   footNote: `
-    (C) 2024 · All rights reserved.
+    (C) 2024 · सर्वाधिकार सुरक्षित
   `,
 };
