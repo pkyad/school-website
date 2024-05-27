@@ -1,6 +1,6 @@
 site:
   name: Krishna Academy
-  site: 'https://astrowind.vercel.app'
+  site: 'https://krishnaacademy.org'
   base: '/'
   trailingSlash: false
 
