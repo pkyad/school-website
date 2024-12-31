@@ -35,6 +35,10 @@ export const headerData = {
       text: 'प्राचार्य के डेस्क से',
       href: '/message-from-principal',
     },
+    {
+      text: 'पुस्तकालय सेवाएँ',
+      href: '/library-services',
+    },
   ],
   actions: [{ text: 'संपर्क करें', href: '/contact' }],
 };
