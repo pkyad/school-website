@@ -64,6 +64,10 @@ export const footerData = {
           text: 'प्राचार्य के डेस्क से',
           href: '/message-from-principal',
         },
+        {
+          text: 'पुस्तकालय सेवाएँ',
+          href: '/library-services',
+        },
       ],
     },
   ],
