@@ -3,10 +3,6 @@ import { getPermalink } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'मुख्य पृष्ठ ',
-      href: '/',
-    },
-    {
       text: 'पाठ्यक्रम',
       links: [
         {
